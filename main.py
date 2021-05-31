@@ -6,14 +6,12 @@ from tkinter import ttk, StringVar
 from tkinter.filedialog import askdirectory
 
 
-# TODO: Error handling
-# TODO: Clean up
-# TODO: Add restart files
-# TODO: Add grib compression?
-# TODO: Add NetCDF compression?
-# TODO: Add ASCII files? (YU*, M_*, etc ..)
-# TODO: Add assimilation files? (Feedobs)
-# TODO: Support output on subdomains?
+# TODO: Error handling: there is a little bit of handling of user inputs, but could definitely be expanded
+# TODO: Add restart files: right now it only calculates the output files, not the restart files
+# TODO: Add ASCII files? (YU*, M_*, etc ..): these are not very big, so might not be too important to add
+# TODO: Add assimilation files? (Feedobs): right now it doesn't include any of the data assimilation output
+# TODO: Support output on subdomains?: not yet coded, not sure if necessary
+
 class GUI:
     def __init__(self, window):
         self.input_dirtext = StringVar()
